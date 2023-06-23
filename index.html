@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- metas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- links -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/startPage.css">
+  <link rel="stylesheet" href="css/bd.css">
+  <link rel="stylesheet" href="css/geovisorPage.css">
+  <link rel="stylesheet" href="css/aboutPage.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- scripts -->
+  <script type="module" src="/js/pages.js"></script>
+  <script type="module" src="/js/pageSwitcher.js"></script>
+  <script type="module" src="/js/scroll.js"></script>
+  <script type="module" src="/js/slider.js"></script>
+  <script type="module" src="/js/reload.js"></script>
+  <title>GEOPORTAL</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="topHeader">
+      <img class="govImage" src="assets/gov.png">
+    </div>
+    <div class="centerHeader">
+      <img class="logoHeader" src="assets/logo.png">
+      <img class="dane" src="assets/dane.png">
+    </div>
+    <div class="downHeader">
+      <div class="pagesChooser">
+        <div id="startChooser">
+          <a href="#page startPage" >🏠Inicio</a>
+        </div>
+        <div id="dbChooser">
+          <a href="#page dbPage" >🧳Base de Datos</a>
+        </div>
+        <div id="geovisorChooser">
+          <a href="#page geovisorPage" >🌎Geovisor</a>
+        </div>
+        <div id="aboutChooser">
+          <a href="#page aboutPage" >🧭 Acerca del Geoportal</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- body -->
+  <!-- pages -->
+  <div class="root">
+    <div class="page startPage" id="start_page">
+      <section class="slider_content" id="slider">
+        <img src="assets/sliderUno.png" class="slider_image">
+        <img src="assets/sliderDos.png" class="slider_image">
+        <img src="assets/sliderTres.png" class="slider_image">
+        <img src="assets/sliderCuatro.png" class="slider_image">
+        <div class="nextImage">
+          <img src="assets/next.png" id="next_image_button">
+        </div>
+        <div class="beforeImage">
+          <img src="assets/next-iz.png" id="before_image_button">
+        </div>
+      </section>
+    </div>
+    <div class="page dbPage" id="db_page">
+      <section>
+
+      </section>
+    </div>
+    <div class="page geovisorPage" id="geovisor_page">
+      <section>
+
+      </section>
+    </div>
+    <div class="page aboutPage" id="about_page">
+      <section>
+
+      </section>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="footerImage">
+      <img src="assets/footer.png">
+    </div>
+    <div class="footerContainer">
+      <img class="up" id="scrollUp" src="assets/up.png">
+      <img class="univalle" src="assets/logoUV.jpg">
+      <h3 id="footer_name">Geoportal Accesibilidad al Sistema de Salud</h3>
+      <div class="directions">
+        <p class="bold-text">Direccion</p>
+        <p>Calle 13 # 100-00 Santiago de Cali, Valle del Cauca, Colombia</p>
+        <p>Código postal: 760042</p>
+        <p>Distrito capital Santiago de Cali-Colombia-Sudamerica</p>
+      </div>
+      <div class="contact">
+        <p class="bold-text">Contacto</p>
+        <p>Email: juan.rodriguez.hurtado@correounivalle.edu.co</p>
+        <p>Teléfono: +53 (323) 581-1490</p>
+        <p>Email: cesar.coral@correounivalle.edu.co</p>
+        <p>Teléfono: +53 (312) 711-0401</p>
+        <p>Email: dehivy.ossa@correounivalle.edu.co</p>
+        <p>Teléfono: +53 (310) 7631383</p>
+      </div>
+      <div class="aIcons">
+        <a href="https://www.facebook.com/empresa"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/empresa"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/empresa"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.github.com/empresa"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="enterpriseLaw">
+        <p>© 2023 Geoportal. Todos los derechos reservados de la Universidad del valle.</p>
+      </div>
+      <img class="caliLoge" src="assets/cali.png">
+      <img class="medicineLoge" src="assets/medicina.png">
+    </div>
+  </footer>
+</body>
+
+</html>

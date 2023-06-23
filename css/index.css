@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #83AEB4;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+footer {
+  position: absolute;
+  background-color: #DFE5EB;
+  top: 4000px;
+  z-index: 1;
+}
+
+header{
+  background-color: none; /*#917320*/
+  width: 100%;
+  height: 11.7em;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.bold-text {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+

@@ -1,0 +1,316 @@
+
+/*Seccion del pie de pagina........................................*/
+.footerImage {
+  position: relative;
+}
+.footerContainer{
+  width: 100%;
+  height: 25em;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+.aIcons{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  top: 19em;
+  left: 1vw;
+  width: 15em;
+}
+.aIcons a {
+  color: #333; /* Color de los iconos */
+  text-decoration: none; /* Eliminar el subrayado de los enlaces */
+}
+
+.aIcons i {
+  font-size: 24px; /* Tamaño de los iconos */
+  margin-right: 30px;/* Espacio entre los iconos */
+}
+
+.aIcons a:hover i {
+  color: #555; /* Cambiar el color de los iconos al pasar el cursor sobre ellos */
+}
+
+.enterpriseLaw{
+  position: absolute;
+  display: flex ;
+  width: 15em;
+  top: 15em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  left: 0.4vw;
+}
+#footer_name{
+  position: absolute;
+  width: 15em;
+  top: -0.1em;
+  left: 34vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.8em;
+}
+.directions{
+  position: absolute;
+  display: block;
+  width: 15em;
+  height: 6em;
+  top: 6.8em;
+  left: 55vw;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 1em;
+  font-size: 1em;
+}
+.contact{
+  position: absolute;
+  display: block;
+  width: 15em;
+  top: 6.8em;
+  left: 30vw;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 1em;
+  font-size: 1em;
+}
+.univalle{
+  position: absolute;
+  width: 5em;
+  left: 5em;
+  top: 7.5em;
+  box-shadow: 2em 2em 2em #a9a8a8;
+}
+.caliLoge{
+  position: absolute;
+  width: 10em;
+  left: 83vw;
+  top: 15em;
+  box-shadow: 2em 2em 2em #a9a8a8;
+}
+.medicineLoge{
+  position: absolute;
+  width: 5em;
+  left: 85vw;
+  top: 7.5em;
+}
+@media (max-width: 1130px) {
+  .directions{
+    font-size: 14px;
+    top: 9em;
+  }
+  .contact{
+    font-size: 14px;
+    top: 9em;
+  }
+  .caliLoge{
+    left: 84vw;
+  }
+  .medicineLoge{
+    left: 86.5vw;
+  }
+}
+@media (max-width: 1288px) {
+  .aIcons{
+    left: 1.8vw;
+  }
+  .enterpriseLaw{
+    left: 1vw;
+  }
+  #footer_name{
+    left: 28vw;
+  }
+  .directions{
+    left: 55vw;
+  }
+  .contact{
+    left: 25vw;
+  }
+  .caliLoge{
+    left: 85vw;
+    width: 8em;
+  }
+  .medicineLoge{
+    left: 87vw;
+    width: 4em;
+  }
+  .univalle{
+    left: 5.8em;
+    width: 4.5em;
+  }
+}
+
+@media (max-width: 974px) {
+  .directions{
+    top: 11em;
+    font-size: 0.8em;
+  }
+  .contact{
+    top: 11em;
+    font-size: 0.8em;
+  }
+  .enterpriseLaw{
+    left: 0.5vw;
+    font-size: 0.8em;
+    top: 17em;
+  }
+  .aIcons{
+    left: 1.3em;
+    top: 16.5em;
+    width: 11em;
+  }
+  i {
+    font-size: 19px; /* Tamaño de los iconos */
+    margin-right: 20px;/* Espacio entre los iconos */
+  }
+  #footer_name{
+    left: 25vw;
+    top: 1.5em;
+    font-size: 1.6em;
+  }
+  .caliLoge{
+    left: 86vw;
+    width: 6em;
+    top: 14em;
+  }
+  .medicineLoge{
+    left: 87vw;
+    width: 4em;
+    top: 8em;
+  }
+  .univalle{
+    left: 4.5em;
+    width: 3.5em;
+  }
+}
+/*usabilidad para tablet*/
+@media (max-width: 900px) {
+  .univalle{
+    left: 4.5em;
+    width: 3.5em;
+  }
+  .enterpriseLaw{
+    left: 0.5vw;
+    font-size: 0.8em;
+    top: 17em;
+  }
+  .aIcons{
+    left: 1.3em;
+    top: 16.5em;
+    width: 11em;
+  }
+  i {
+    font-size: 19px; /* Tamaño de los iconos */
+    margin-right: 20px;/* Espacio entre los iconos */
+  }
+  #footer_name{
+    left: 25vw;
+    top: 1em;
+    font-size: 1.6em;
+  }
+  .directions{
+    left: 58vw;
+    width: 15em;
+    height: 13em;
+    top: 10em;
+    font-size: 0.8em;
+  }
+  .contact{
+    left: 25vw;
+    width: 21em;
+    top: 10em;
+    font-size: 0.8em;
+  }
+  .caliLoge{
+    left: 86vw;
+    width: 6em;
+    top: 14em;
+  }
+  .medicineLoge{
+    width: 1em;
+    left: 87.5vw;
+    width: 4em;
+    top: 8em;
+  }
+}
+
+@media (max-width: 815px) {
+  i {
+    font-size: 17px; /* Tamaño de los iconos */
+    margin-right: 20px;/* Espacio entre los iconos */
+  }
+  .directions{
+    top: 12em;
+    font-size: 0.7em;
+  }
+  .contact{
+    top: 12em;
+    font-size: 0.7em;
+  }
+  .caliLoge{
+    left: 85.8vw;
+  }
+  .medicineLoge{
+    width: 3.5em;
+  }
+  .enterpriseLaw{
+    font-size: 0.8em;
+    top: 17em;
+  }
+  #footer_name{
+    top: 1.6em;
+    font-size: 1.5em;
+  }
+}
+  /*usabilidad para celular*/
+@media (max-width: 414px) {
+  .aIcons{
+    left: 8em;
+    top: 31em;
+  }
+  i {
+    font-size: 30px; /* Tamaño de los iconos */
+    margin-right: 20px;/* Espacio entre los iconos */
+  }
+  .directions{
+    top: 33em;
+    font-size: 0.7em;
+    left: 11em;
+    left: 10em;
+    text-align: center;
+  }
+  .contact{
+    top: 15em;
+    font-size: 0.7em;
+    text-align: center;
+    left: 7em;
+  }
+  .caliLoge{
+    display: none;
+  }
+  .medicineLoge{
+    display: none;
+  }
+  .enterpriseLaw{
+    font-size: 0.8em;
+    top: 46em;
+    left: 8.5em;
+  }
+  #footer_name{
+    display: none;
+  }
+  .footerContainer{
+    height: 36em;
+  }
+  .univalle{
+    left: 11em;
+    top: 6em;
+    width: 3.5em;
+  }
+}

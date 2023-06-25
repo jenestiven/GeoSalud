@@ -69,7 +69,7 @@
 /* usability*/
 @media (max-width: 1288px) {
   .slider_content{
-    height: 20%;
+    height: 15%;
   }
   .nextImage{
     top: 50%;
@@ -81,7 +81,7 @@
 }
 @media (max-width: 1030px) {
   .slider_content{
-    height: 20%;
+    height: 15%;
   }
   .nextImage{
     left: 94vw;

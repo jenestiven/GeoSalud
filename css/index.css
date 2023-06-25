@@ -8,9 +8,9 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   background-color: #DFE5EB;
-  top: 4000px;
+  bottom: 0;
   z-index: 1;
 }
 
@@ -31,3 +31,6 @@ a {
   text-decoration: none;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}

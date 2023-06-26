@@ -1,11 +1,6 @@
 /*Seccion de la pagina de acerca de*/
 .aboutPage{
   width: 100%;
-  height: 2000px;
+  height: 1500px;
   background-color: #83AEB4;
-  border: blue 6px;
-  border-style: solid; 
 }
-
-  
-  

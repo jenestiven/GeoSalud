@@ -22,6 +22,7 @@
   <script type="module" src="/js/scroll.js"></script>
   <script type="module" src="/js/slider.js"></script>
   <script type="module" src="/js/reload.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>GEOPORTAL</title>
 </head>
 
@@ -68,6 +69,60 @@
           <img src="assets/next-iz.png" id="before_image_button">
         </div>
       </section>
+      <section class="comunasPosition text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Comunas de la ciudad de Santiago de Cali</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-900">Santiago de Cali es una ciudad en Colombia que está dividida administrativamente en 22 comunas urbanas 1. Cada comuna está compuesta por varios barrios y sectores geográficos y cuenta con información básica como límites administrativos, sitios de interés, cuerpos de agua, elementos de tránsito y transporte, jerarquización de las vías y equipamientos básicos y colectivos.</p>
+          </div>
+          <iframe src="https://www.cali.gov.co/planeacion/publicaciones/115924/mapas_comunas_idesc/" frameborder="0" class="comunasFrame"></iframe>
+        </div>
+      </section>
+      <section class="positionBlogCards xl:w-full mx-auto px-4 sm:px-6 lg:px-4 mb-12">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Servicios</h1>
+        </div>
+        <article>
+          <section class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8">
+            <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="absolute inset-0 group-hover:bg-cover group-hover:bg-center transition duration-300 ease-in-out" style="background-image: url('assets/sliderDos.png');"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                    <h3 class="text-center">
+                        <a class="text-white text-3xl font-bold text-center" href="#page geovisorPage" id="geovisorCard">
+                            <span class="absolute inset-0"></span>
+                            Geovisor
+                        </a>
+                    </h3>
+                </div>
+            </article>
+            <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out">
+              <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+              <div class="absolute inset-0 group-hover:bg-cover group-hover:bg-center transition duration-300 ease-in-out" style="background-image: url('assets/sliderCuatro.png');"></div>
+              <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                  <h3 class="text-center">
+                      <a class="text-white text-3xl font-bold text-center" href="#page aboutPage" id="aboutCard">
+                          <span class="absolute inset-0"></span>
+                          Acerca del Geoportal
+                      </a>
+                  </h3>
+              </div>
+            </article>
+            <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out">
+              <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+              <div class="absolute inset-0 group-hover:bg-cover group-hover:bg-center transition duration-300 ease-in-out" style="background-image: url('assets/sliderTres.png');"></div>
+              <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                  <h3 class="text-center">
+                      <a class="text-white text-3xl font-bold text-center" href="#page dbPage" id="dbCard">
+                          <span class="absolute inset-0"></span>
+                          Descarga de Datos
+                      </a>
+                  </h3>
+              </div>
+            </article>
+          </section>
+        </article>
+      </section>
     </div>
     <div class="page dbPage" id="db_page">
       <section class="dbContainer">
@@ -100,6 +155,7 @@
     </div>
     <div class="page geovisorPage" id="geovisor_page">
       <section>
+      
 
       </section>
     </div>

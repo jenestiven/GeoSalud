@@ -47,7 +47,7 @@
 #footer_name{
   position: absolute;
   width: 15em;
-  top: -0.1em;
+  top: 0.4em;
   left: 34vw;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@
   display: block;
   width: 15em;
   height: 6em;
-  top: 6.8em;
+  top: 7.5em;
   left: 55vw;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@
   position: absolute;
   display: block;
   width: 15em;
-  top: 6.8em;
+  top: 7.5em;
   left: 30vw;
   justify-content: center;
   align-items: center;
@@ -272,14 +272,14 @@
 @media (max-width: 414px) {
   .aIcons{
     left: 8em;
-    top: 31em;
+    top: 30em;
   }
   i {
     font-size: 30px; /* Tamaño de los iconos */
     margin-right: 20px;/* Espacio entre los iconos */
   }
   .directions{
-    top: 33em;
+    top: 31em;
     font-size: 0.7em;
     left: 11em;
     left: 10em;
@@ -299,7 +299,7 @@
   }
   .enterpriseLaw{
     font-size: 0.8em;
-    top: 46em;
+    top: 44.5em;
     left: 8.5em;
   }
   #footer_name{
@@ -309,8 +309,11 @@
     height: 36em;
   }
   .univalle{
-    left: 11em;
-    top: 6em;
+    left: 10.5em;
+    top: 5em;
     width: 3.5em;
+  }
+  footer{
+    height: 100vh;
   }
 }

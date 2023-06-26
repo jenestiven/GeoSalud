@@ -1,23 +1,21 @@
 /*Seccion del slider de imagenes*/
 .startPage{
   width: 100%;
-  height: 2000px;
-  background-color: #83AEB4;
-  border: wheat;
-  border-style: solid;  
+  height: 2650px;
+  background-color: #83AEB4; 
 }
 
 .slider_content{
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 700px;
   display: block;
   top: 184px;
 }
 
 .slider_image {
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .slider_image:not(:first-child) {
@@ -26,10 +24,10 @@
 
 .nextImage{
   position: absolute;
-  top: 45%;
-  width: 3%;
-  left: 95vw;
-  height: 8%;
+  top: 35%;
+  width: 3.5%;
+  left: 94vw;
+  height: 7%;
 }
 
 #next_image_button{
@@ -47,10 +45,10 @@
 
 .beforeImage{
   position: absolute;
-  top: 45%;
-  width: 3%;
+  top: 35%;
+  width: 3.5%;
   left: 1vw;
-  height: 8%;
+  height: 7%;
 }
 
 #before_image_button{
@@ -66,18 +64,56 @@
   opacity: 1;
 }
 
+/*Seccion comunas */
+.comunasPosition{
+  position: relative;
+  top: 744px;
+  width: 100%;
+  height: 1100px;
+}
+.comunasFrame{
+  position: relative;
+  width: 110%;
+  left: -60px;
+  height: 770px;
+  border-radius: 10px;
+  box-shadow: 2em 2em 2em #75a0a5; 
+}
+
+/*Seccion servicios*/
+
+.positionBlogCards{
+  position: absolute;
+  top: 2000px;
+  height: 200px;
+}
+
+
+
 /* usability*/
 @media (max-width: 1288px) {
+  .startPage{
+    height: 2300px;
+  }
   .slider_content{
-    height: 15%;
+    height: 500px;
   }
   .nextImage{
-    top: 50%;
+    top: 35%;
   }
   .beforeImage{
-    top: 50%;
+    top: 35%;
   }
-  
+  .comunasPosition{
+    top: 550px;
+  }
+  .comunasFrame{
+    width: 94%;
+    left: 40px;
+  }
+  .positionBlogCards{
+    top: 1800px;
+  }
 }
 @media (max-width: 1030px) {
   .slider_content{
@@ -85,6 +121,15 @@
   }
   .nextImage{
     left: 94vw;
+  }
+}
+@media (max-width: 813px) {
+  .startPage{
+    height: 2600px;
+  }
+  .positionBlogCards{
+    top: 1800px;
+    left: 18px;
   }
 }
 @media (max-width: 780px) {
@@ -95,6 +140,13 @@
   .nextImage{
     left: 93vw;
   }
+  .comunasPosition{
+    top: 590px;
+  }
+  .comunasFrame{
+    width: 93%;
+    left: 25px;
+  }
 }
 @media (max-width: 415px) {
   .slider_content{
@@ -104,4 +156,19 @@
   .nextImage{
     left: 91vw;
   }
+  .comunasPosition{
+    top: 400px;
+  }
+  .comunasFrame{
+    width: 93%;
+    left: 10px;
+  }
+  .positionBlogCards{
+    top: 1950px;
+    left: 18px;
+  }
+  .startPage{
+    height: 2900px;
+  }
 }
+

@@ -4,6 +4,7 @@
   height: 2750px;
   background-color: #83AEB4; 
   display: block;
+  font-family: "Inter var", sans-serif;
 }
 .slider_content{
   position: relative;
@@ -186,7 +187,7 @@
 .sectionServices article {
   position: relative;
   width: 100%;
-  height: 20rem;
+  height: 23rem;
   background-size: cover;
   background-position: center;
   border-radius: 0.5rem;
@@ -201,11 +202,72 @@
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
 }
+.sectionServices article h2{
+  color:#3c475a;
+  font-size: 1.2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.sectionServices article button{
+  position: absolute;
+  background-color:#9E064F;
+  font-size: 1.2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  left: 35%;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+}
+.sectionServices article button a{
+  color: white;
+  text-decoration: none;
+  padding: 0.1rem;
+}
+.sectionServices article button a:hover{
+  background-color:#9E064F;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.sectionServices article button:active{
+  transform: scale(0.9);
+}
+
 
 .tarjetsPicture{
   width: 100%;
-  height: 70%;
-  background-color: #3c475a;
+  height: 60%;
+  background-size: cover;
+  cursor: pointer;
+}
+.tarjetsPicture a{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+}
+#showTarjetOne{
+  background-image: url("../assets/sliderDos.png");
+}
+#showTarjetOne:hover{
+  background-image: url("../assets/mBase.png");
+}
+#showTarjetTwo{
+  background-image: url("../assets/sliderCuatro.png");
+}
+#showTarjetTwo:hover{
+  background-image: url("../assets/baseDatosDescarga.png");
+}
+#showTarjetThree{
+  background-image: url("../assets/sliderTres.png");
+}
+#showTarjetThree:hover{
+  background-image: url("../assets/about.png");
 }
 
 
@@ -239,7 +301,7 @@
     left: 94vw;
   }
   .startPage{
-    height: 2600px;
+    height: 2800px;
   }
   .positionBlogCards{
     top: 100px;
@@ -247,7 +309,7 @@
 }
 @media (max-width: 813px) {
   .startPage{
-    height: 2600px;
+    height: 2900px;
   }
 }
 @media (max-width: 780px) {
@@ -262,7 +324,7 @@
     top: 100px;
   }
   .startPage{
-    height: 2900px;
+    height: 3300px;
   }
 }
 @media (max-width: 415px) {
@@ -274,7 +336,7 @@
     left: 91vw;
   }
   .startPage{
-    height: 3000px;
+    height: 3400px;
   }
   .positionBlogCards {
     padding-top: 3rem;

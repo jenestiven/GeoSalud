@@ -1,0 +1,36 @@
+
+<!-- index.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla</title>
+</head>
+<body>
+  <h1>Contenido de la tabla:</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Identificador</th>
+        <th>Naturaleza</th>
+        <th>Telefono</th>
+        <!-- Agrega más encabezados de columna según tu tabla -->
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let row of tabla) { %>
+        <tr>
+          <td><%= row.nombre %></td>
+          <td><%= row.direccion %></td>
+          <td><%= row.id %></td>
+          <td><%= row.naturaleza %></td>
+          <td><%= row.telefono %></td>
+          <!-- Agrega más celdas según tu tabla -->
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</body>
+</html>

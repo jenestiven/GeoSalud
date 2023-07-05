@@ -6,22 +6,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- links -->
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/startPage.css">
-  <link rel="stylesheet" href="css/bd.css">
-  <link rel="stylesheet" href="css/geovisorPage.css">
-  <link rel="stylesheet" href="css/aboutPage.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/skills.css">
-  <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="public\css\index.css">
+  <link rel="stylesheet" href="public\css/header.css">
+  <link rel="stylesheet" href="public\css/startPage.css">
+  <link rel="stylesheet" href="public\css/bd.css">
+  <link rel="stylesheet" href="public\css/geovisorPage.css">
+  <link rel="stylesheet" href="public\css/aboutPage.css">
+  <link rel="stylesheet" href="public\css/footer.css">
+  <link rel="stylesheet" href="public\css/skills.css">
+  <link rel="icon" href="public/assets/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- scripts -->
-  <script type="module" src="/js/pages.js"></script>
-  <script type="module" src="/js/pageSwitcher.js"></script>
-  <script type="module" src="/js/scroll.js"></script>
-  <script type="module" src="/js/slider.js"></script>
-  <script type="module" src="/js/reload.js"></script>
+  <script type="module" src="public/js/pages.js"></script>
+  <script type="module" src="public/js/pageSwitcher.js"></script>
+  <script type="module" src="public/js/scroll.js"></script>
+  <script type="module" src="public/js/slider.js"></script>
+  <script type="module" src="public/js/reload.js"></script>
   <title>GEOPORTAL</title>
 </head>
 
@@ -29,11 +29,11 @@
   <!-- header -->
   <header>
     <div class="topHeader">
-      <img class="govImage" src="assets/gov.png">
+      <img class="govImage" src="public/assets/gov.png">
     </div>
     <div class="centerHeader">
-      <img class="logoHeader" src="assets/logo.png">
-      <img class="dane" src="assets/dane.png">
+      <img class="logoHeader" src="public/assets/logo.png">
+      <img class="dane" src="public/assets/dane.png">
     </div>
     <div class="downHeader">
       <div class="pagesChooser">
@@ -57,15 +57,15 @@
   <div class="root">
     <div class="page startPage" id="start_page">
       <section class="slider_content" id="slider">
-        <img src="assets/sliderUno.png" class="slider_image">
-        <img src="assets/sliderDos.png" class="slider_image">
-        <img src="assets/sliderTres.png" class="slider_image">
-        <img src="assets/sliderCuatro.png" class="slider_image">
+        <img src="public/assets/sliderUno.png" class="slider_image">
+        <img src="public/assets/sliderDos.png" class="slider_image">
+        <img src="public/assets/sliderTres.png" class="slider_image">
+        <img src="public/assets/sliderCuatro.png" class="slider_image">
         <div class="nextImage">
-          <img src="assets/next.png" id="next_image_button">
+          <img src="public/assets/next.png" id="next_image_button">
         </div>
         <div class="beforeImage">
-          <img src="assets/next-iz.png" id="before_image_button">
+          <img src="public/assets/next-iz.png" id="before_image_button">
         </div>
       </section>
       <section class="comunasPosition">
@@ -113,32 +113,8 @@
       </section>
     </div>
     <div class="page dbPage" id="db_page">
-      <section class="dbContainer">
-        <!-- esos ids van a ser diferentes pero por ahora seran asi  -->
-        <div class="Data_container" id="One">
-          <div class="downloaderDBImageContainer"></div>
-          <div class="textDBDownloderContainer"></div>
-        </div>
-        <div class="Data_container" id="Two">
-          <div class="downloaderDBImageContainer"></div>
-          <div class="textDBDownloderContainer"></div>
-        </div>
-        <div class="Data_container" id="Three">
-          <div class="downloaderDBImageContainer"></div>
-          <div class="textDBDownloderContainer"></div>
-        </div>
-        <div class="Data_container" id="Four">
-          <div class="downloaderDBImageContainer"></div>
-          <div class="textDBDownloderContainer"></div>
-        </div>
-        <div class="Data_container" id="Five">
-          <div class="downloaderDBImageContainer"></div>
-          <div class="textDBDownloderContainer"></div>
-        </div>
-        <div class="Data_container" id="Six">
-          <div class="downloaderDBImageContainer"></div>
-          <div class="textDBDownloderContainer"></div>
-        </div>
+      <section class="tableipsContainer">
+        
       </section>
     </div>
     <div class="page geovisorPage" id="geovisor_page">
@@ -156,11 +132,11 @@
   <!-- footer -->
   <footer>
     <div class="footerImage">
-      <img src="assets/footer.png">
+      <img src="public/assets/footer.png">
     </div>
     <div class="footerContainer">
-      <img class="up" id="scrollUp" src="assets/up.png">
-      <img class="univalle" src="assets/logoUV.jpg">
+      <img class="up" id="scrollUp" src="public/assets/up.png">
+      <img class="univalle" src="public/assets/logoUV.jpg">
       <h3 id="footer_name">Geoportal Accesibilidad al Sistema de Salud</h3>
       <div class="directions">
         <p class="bold-text">Direccion</p>
@@ -186,8 +162,8 @@
       <div class="enterpriseLaw">
         <p>© 2023 Geoportal. Todos los derechos reservados de la Universidad del valle.</p>
       </div>
-      <img class="caliLoge" src="assets/cali.png">
-      <img class="medicineLoge" src="assets/medicina.png">
+      <img class="caliLoge" src="public/assets/cali.png">
+      <img class="medicineLoge" src="public/assets/medicina.png">
     </div>
   </footer>
 </body>

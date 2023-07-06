@@ -1,24 +1,15 @@
 const express = require('express');
 const { exec } = require('child_process');
 const app = express();
-const getTabla = require('./getTable');
 const path = require('path');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname,'..','/views'));
 
-app.use(express.static(path.join(__dirname,'..','/public')));  
+app.use(express.static(path.join(__dirname,'..','/public')));
 
-app.get('/', (req, res, next) => {
-  getTabla()
-    .then((data) => {
-      res.render('index', { tabla: data });
-    })
-    .catch((err) => {
-      console.error(err);
-      next(err);
-    });
-});
+const rutas = require('./routes');
+app.use(rutas);
 
 app.use((err, req, res, next) => {
   console.error(err);

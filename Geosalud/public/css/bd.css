@@ -1,26 +1,79 @@
 /*Seccion de la pagina de bases de datos*/
 .dbPage{
   width: 100%;
-  height: 1100px;
+  height: 2400px;
   background-color: #83AEB4;
 }
 
-.tableipsContainer{
-  position: relative;
-  width: 95%;
-  height: 40%; 
-  left: 2.5%;
-  top: 210px;
-  border-radius: 0.5rem;
-}
-
-.ipsTableFrame {
+.tableContainer{
   position: absolute;
   width: 90%;
-  margin: 1rem auto;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 2em 2em 2em #75a0a5; 
-  display: flex;
+  height: 500px; 
+  left: 2.5%;
+  border-radius: 0.5rem;
   overflow-y: scroll;
+  overflow-x: scroll;
+  overflow: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
+.tableContainer::-webkit-scrollbar {
+  width: 0.5rem;
+}
+#ips{
+  top: 240px;
+  background-color:#DFE5EB;
+}
+#ips::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.tableContainer h1{
+  text-align: center; 
+  font-size: 3rem;
+}
+.tableContainer table{
+  position: relative;
+  border: solid 1px black;
+  border-radius: 0.5rem;
+  margin-bottom: 40px;
+}
+#eps {
+  top: 810px;
+  height: 710px;
+  background-color:#DFE5EB;
+  width: 40%;
+}
+#eps::-webkit-scrollbar {
+  width: 0.5rem;
+}
+#dispensors{
+  top: 810px;
+  background-color:#DFE5EB;
+  width: 40%;
+  height: 710px;
+  left: 52%;
+}
+#dispensors::-webkit-scrollbar {
+  width: 0.5rem;
+}
+#services{
+  top: 1600px;
+  left: 25%;
+  width: 48%;
+  background-color:#DFE5EB;
+}
+#services::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.iphead{
+  background-color: #c9c8c2;
+  font-size: 1.3rem; 
+  text-align: left;
+}
+.ipbody{
+  background-color: #efeeea;
+  text-align: left;
+}
+

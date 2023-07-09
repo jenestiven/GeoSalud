@@ -163,107 +163,115 @@
         </article>
       </section>
       <div class="showIpsTable" id="ipsTarjet">
-        <h1>IPS</h1>
-        <table>
-          <thead class="iphead">
-            <tr>
-              <th>Nombre</th>
-              <th>Direccion</th>
-              <th>ID</th>
-              <th>Regimen</th>
-              <th>Telefono</th>
-              <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
-            </tr>
-          </thead>
-          <tbody class="ipbody">
-            <% for (let row of tablaIps) { %>
+        <section class="tableContainer"> 
+          <h1>IPS</h1>
+          <table>
+            <thead class="iphead">
               <tr>
-                <td><%= row.nombre %></td>
-                <td><%= row.direccion %></td>
-                <td><%= row.id %></td>
-                <td><%= row.naturaleza %></td>
-                <td><%= row.telefono %></td>
-                <!-- Agrega más celdas aquí para mostrar más columnas -->
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>ID</th>
+                <th>Regimen</th>
+                <th>Telefono</th>
+                <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
               </tr>
-            <% } %>
-          </tbody>
-        </table>
+            </thead>
+            <tbody class="ipbody">
+              <% for (let row of tablaIps) { %>
+                <tr>
+                  <td><%= row.nombre %></td>
+                  <td><%= row.direccion %></td>
+                  <td><%= row.id %></td>
+                  <td><%= row.naturaleza %></td>
+                  <td><%= row.telefono %></td>
+                  <!-- Agrega más celdas aquí para mostrar más columnas -->
+                </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </section>
       </div>
-      <section id="eps">
-        <h1>EPS</h1>
-        <table>
-          <thead class="iphead">
-            <tr>
-              <th>Nombre</th>
-              <th>Direccion</th>
-              <th>ID</th>
-              <th>Regimen</th>
-              <th>Telefono</th>
-              <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
-            </tr>
-          </thead>
-          <tbody class="ipbody">
-            <% for (let row of tablaEps) { %>
+      <div class="showEpsTable" id="epsTarjet">
+        <section class="tableContainer">
+          <h1>EPS</h1>
+          <table>
+            <thead class="iphead">
               <tr>
-                <td><%= row.nombre %></td>
-                <td><%= row.direccion %></td>
-                <td><%= row.id %></td>
-                <td><%= row.regimen %></td>
-                <td><%= row.telefono %></td>
-                <!-- Agrega más celdas aquí para mostrar más columnas -->
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>ID</th>
+                <th>Regimen</th>
+                <th>Telefono</th>
+                <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
               </tr>
-            <% } %>
-          </tbody>
-        </table>
-      </section>
-      <section id="dispensors">
-        <h1>Dispensarios de Medicamentos</h1>
-        <table>
-          <thead class="iphead">
-            <tr>
-              <th>Nombre</th>
-              <th>Direccion</th>
-              <th>ID</th>
-              <th>Telefono</th>
-              <th>Tipo</th>
-              <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
-            </tr>
-          </thead>
-          <tbody class="ipbody">
-            <% for (let row of tablaDispensarios) { %>
+            </thead>
+            <tbody class="ipbody">
+              <% for (let row of tablaEps) { %>
+                <tr>
+                  <td><%= row.nombre %></td>
+                  <td><%= row.direccion %></td>
+                  <td><%= row.id %></td>
+                  <td><%= row.regimen %></td>
+                  <td><%= row.telefono %></td>
+                  <!-- Agrega más celdas aquí para mostrar más columnas -->
+                </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div class="showDispensadoresTable" id="dispensorsTarjet">
+        <section class="tableContainer">
+          <h1>Dispensarios de Medicamentos</h1>
+          <table>
+            <thead class="iphead">
               <tr>
-                <td><%= row.nombre %></td>
-                <td><%= row.direccion %></td>
-                <td><%= row.id %></td>
-                <td><%= row.telefono %></td>
-                <td><%= row.tipo %></td>
-                <!-- Agrega más celdas aquí para mostrar más columnas -->
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>ID</th>
+                <th>Telefono</th>
+                <th>Tipo</th>
+                <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
               </tr>
-            <% } %>
-          </tbody>
-        </table>
-      </section>
-      <section id="services">
-        <h1>Servicios</h1>
-        <table>
-          <thead class="iphead">
-            <tr>
-              <th>ID</th>
-              <th>Servicio</th>
-              <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
-            </tr>
-          </thead>
-          <tbody class="ipbody">
-            <% for (let row of tablaServicios) { %>
+            </thead>
+            <tbody class="ipbody">
+              <% for (let row of tablaDispensarios) { %>
+                <tr>
+                  <td><%= row.nombre %></td>
+                  <td><%= row.direccion %></td>
+                  <td><%= row.id %></td>
+                  <td><%= row.telefono %></td>
+                  <td><%= row.tipo %></td>
+                  <!-- Agrega más celdas aquí para mostrar más columnas -->
+                </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div class="showServiciosTable" id="servicesTarjet">
+        <section class="tableContainer">
+          <h1>Servicios</h1>
+          <table>
+            <thead class="iphead">
               <tr>
-                <td><%= row.id %></td>
-                <td><%= row.servicio %></td>
-                <!-- Agrega más celdas aquí para mostrar más columnas -->
+                <th>ID</th>
+                <th>Servicio</th>
+                <!-- Agrega más celdas de encabezado aquí para mostrar más columnas -->
               </tr>
-            <% } %>
-          </tbody>
-        </table>
-      </section>
+            </thead>
+            <tbody class="ipbody">
+              <% for (let row of tablaServicios) { %>
+                <tr>
+                  <td><%= row.id %></td>
+                  <td><%= row.servicio %></td>
+                  <!-- Agrega más celdas aquí para mostrar más columnas -->
+                </tr>
+              <% } %>
+            </tbody>
+          </table>
+        </section>
+      </div>
     </div>
     <div class="page geovisorPage" id="geovisor_page">
       <section class="geobarra">

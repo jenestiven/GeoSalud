@@ -138,85 +138,58 @@
 /* seccion del tarjet donde se muestran las tablas de la base de datos solo si el usuario desea verlas*/
 .showIpsTable{
   position: absolute;
-  top: 240px;
-  height: 1400px;
+  top: 0;
+  height: 100%;
   width: 100%;
-  background-color:#DFE5EB;
-  visibility: hidden;
-}
-
-.showIpsTable::-webkit-scrollbar {
-  width: 0.5rem;
-}
-#ipsTarjet{
-  top: 240px;
-  background-color:#DFE5EB;
   display: none;
+  z-index: 1;
 }
-#ips::-webkit-scrollbar {
-  width: 0.5rem;
+.tableContainer {
+  position: relative;
+  width: 100%;
+  top: 240px;
+  height: 1150px;
+  background-color: #83AEB4;
+  overflow: auto;
+  margin-bottom: 40px;
 }
-.showIpsTable h1{
+.tableContainer h1{
   text-align: center; 
   font-size: 3rem;
 }
-.showIpsTable table{
+.tableContainer table{
   position: relative;
   border: solid 1px black;
   border-radius: 0.5rem;
   margin-bottom: 40px;
-  height: 1400px;
   margin-left: 10%;
   margin-right: 10%;
 }
-.tableContainer{
+
+.showEpsTable{
   position: absolute;
-  top: 140px;
-  height: 1400px;
+  top: 0;
+  height: 100%;
   width: 100%;
-  background-color:#1b61a8;
+  display: none;
+  z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-#eps {
-  top: 810px;
-  height: 710px;
-  background-color:#DFE5EB;
-  width: 40%;
-  visibility: hidden;
+.showDispensadoresTable{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 1;
 }
-#eps::-webkit-scrollbar {
-  width: 0.5rem;
+.showServiciosTable{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 1;
 }
-#dispensors{
-  top: 810px;
-  background-color:#DFE5EB;
-  width: 40%;
-  height: 710px;
-  left: 52%;
-  visibility: hidden;
-}
-#dispensors::-webkit-scrollbar {
-  width: 0.5rem;
-}
-#services{
-  top: 1600px;
-  left: 25%;
-  width: 48%;
-  background-color:#DFE5EB;
-  visibility: hidden;
-}
-#services::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
 .iphead{
   background-color: #c9c8c2;
   font-size: 1.3rem; 

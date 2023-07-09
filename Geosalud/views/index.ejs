@@ -22,6 +22,7 @@
   <script type="module" src="./js/scroll.js"></script>
   <script type="module" src="./js/slider.js"></script>
   <script type="module" src="./js/reload.js"></script>
+  <script type="module" src="./js/showtable.js"></script>
   <title>GEOPORTAL</title>
 </head>
 
@@ -117,12 +118,51 @@
         <p>Una base de datos es una colección organizada de información, almacenada y accesible electrónicamente. Se utiliza para gestionar grandes cantidades de información de manera eficiente y se organiza en tablas con filas y columnas. Los sistemas de gestión de bases de datos son programas que se utilizan para crear y manipular bases de datos.</p>
       </section>
       <section class="databaseOrganizer">
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>
+          <div class="picturefromdbarticles" id="article_one"></div>
+          <div class="infotextFrame">
+            <h1>IPS</h1>
+            <p>En esta sección, presentamos una tabla detallada con información sobre las Instituciones Prestadoras de Salud (IPS) registradas en los barrios San Fernando Nuevo y Urbanización Tequendama de la ciudad de Cali. Esta información le permitirá conocer las opciones disponibles en estas áreas y tomar decisiones informadas sobre su atención médica.</p>
+            <div>
+              <a onclick="showtable.mostrarIps()">Ver tabla</a>
+              <a>⇲ Descargar</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="picturefromdbarticles" id="article_two"></div>
+          <div class="infotextFrame">
+            <h1>EPS</h1>
+            <p>Aquí presentamos una tabla con información sobre las Entidades Promotoras de Salud (EPS) en los barrios San Fernando Nuevo y Urbanización Tequendama de Cali. Consulte esta información para conocer las opciones disponibles en estas áreas.</p>
+            <div>
+              <a onclick="showtable.mostrarEps()">Ver tabla</a>
+              <a>⇲ Descargar</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="picturefromdbarticles" id="article_three"></div>
+          <div class="infotextFrame">
+            <h1>Dispensario de Medicamentos</h1>
+            <p>En esta sección, encontrará información sobre los lugares de dispensación de medicamentos en la zona.</p>
+            <div>
+              <a onclick="showtable.mostrarDispensors()">Ver tabla</a>
+              <a>⇲ Descargar</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="picturefromdbarticles" id="article_four"></div>
+          <div class="infotextFrame">
+            <h1>Servicios</h1>
+            <div>
+              <a onclick="showtable.mostrarServicios()">Ver tabla</a>
+              <a>⇲ Descargar</a>
+            </div>
+          </div>
+        </article>
       </section>
-      <section class="tableContainer" id="ips">
+      <div class="showIpsTable" id="ipsTarjet">
         <h1>IPS</h1>
         <table>
           <thead class="iphead">
@@ -148,8 +188,8 @@
             <% } %>
           </tbody>
         </table>
-      </section>
-      <section class="tableContainer" id="eps">
+      </div>
+      <section id="eps">
         <h1>EPS</h1>
         <table>
           <thead class="iphead">
@@ -176,7 +216,7 @@
           </tbody>
         </table>
       </section>
-      <section class="tableContainer" id="dispensors">
+      <section id="dispensors">
         <h1>Dispensarios de Medicamentos</h1>
         <table>
           <thead class="iphead">
@@ -203,7 +243,7 @@
           </tbody>
         </table>
       </section>
-      <section class="tableContainer" id="services">
+      <section id="services">
         <h1>Servicios</h1>
         <table>
           <thead class="iphead">

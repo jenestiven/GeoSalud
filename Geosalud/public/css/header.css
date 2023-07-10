@@ -31,7 +31,7 @@
 .dane{
   position: absolute;
   width: 8em;
-  left: 85vw;
+  left: 73vw;
   top: 2.4em;
 }
 .downHeader{
@@ -92,6 +92,28 @@
 .pagesChooser div:active {
   background-color:#83AEB4;
 }
+
+.login{
+  position: absolute;
+  width: 8em;
+  height: 3em;
+  left: 85vw;
+  top: 3.4em;
+  background-color: #917320;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5em;
+  color: #DFE5EB;
+  font-size: 0.8em;
+}
+.login:hover{
+  opacity: 0.9;
+}
+.login:active{
+  scale: 0.9;
+  background-color: #917320;
+}
+
 
 /*usability........................................*/
 @media (max-width: 791px) {

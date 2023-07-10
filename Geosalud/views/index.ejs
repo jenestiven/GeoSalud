@@ -23,6 +23,7 @@
   <script type="module" src="./js/slider.js"></script>
   <script type="module" src="./js/reload.js"></script>
   <script type="module" src="./js/showtable.js"></script>
+  <script type="module" src="./js/gotologin.js"></script>
   <title>GEOPORTAL</title>
 </head>
 
@@ -35,6 +36,7 @@
     <div class="centerHeader">
       <img class="logoHeader" src="./assets/logo.png">
       <img class="dane" src="./assets/dane.png">
+      <button class="login" id="gotolog-in"> Registrate</button>
     </div>
     <div class="downHeader">
       <div class="pagesChooser">
@@ -129,7 +131,7 @@
             <p>En esta sección, presentamos una tabla detallada con información sobre las Instituciones Prestadoras de Salud (IPS) registradas en los barrios San Fernando Nuevo y Urbanización Tequendama de la ciudad de Cali. Esta información le permitirá conocer las opciones disponibles en estas áreas y tomar decisiones informadas sobre su atención médica.</p>
             <div>
               <a onclick="showtable.mostrarIps()">Ver tabla</a>
-              <a>⇲ Descargar</a>
+              <a id="d_ipstable">⇲ Descargar</a>
             </div>
           </div>
         </article>
@@ -140,7 +142,7 @@
             <p>Aquí presentamos una tabla con información sobre las Entidades Promotoras de Salud (EPS) en los barrios San Fernando Nuevo y Urbanización Tequendama de Cali. Consulte esta información para conocer las opciones disponibles en estas áreas.</p>
             <div>
               <a onclick="showtable.mostrarEps()">Ver tabla</a>
-              <a>⇲ Descargar</a>
+              <a id="d_epstable">⇲ Descargar</a>
             </div>
           </div>
         </article>
@@ -151,7 +153,7 @@
             <p>En esta sección, encontrará información sobre los lugares de dispensación de medicamentos en la zona.</p>
             <div>
               <a onclick="showtable.mostrarDispensors()">Ver tabla</a>
-              <a>⇲ Descargar</a>
+              <a id="d_dispensorstable">⇲ Descargar</a>
             </div>
           </div>
         </article>
@@ -161,7 +163,7 @@
             <h1>Servicios</h1>
             <div>
               <a onclick="showtable.mostrarServicios()">Ver tabla</a>
-              <a>⇲ Descargar</a>
+              <a id="d_servicestables">⇲ Descargar</a>
             </div>
           </div>
         </article>

@@ -161,7 +161,11 @@
   }
 }
 
-
+.positionBlogCards nav a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: underline;
+}
 
 .sectionServices {
   position: relative;

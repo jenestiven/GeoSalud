@@ -77,11 +77,16 @@
             <h1 class="sectionsTitle">Comunas de la ciudad de Santiago de Cali</h1>
             <p class="comunasP">Santiago de Cali es una ciudad en Colombia que está dividida administrativamente en 22 comunas urbanas 1. Cada comuna está compuesta por varios barrios y sectores geográficos y cuenta con información básica como límites administrativos, sitios de interés, cuerpos de agua, elementos de tránsito y transporte, jerarquización de las vías y equipamientos básicos y colectivos.</p>
           </div>
-          <iframe frameborder="0" class="comunasFrame"></iframe>
+          <iframe src="https://www.cali.gov.co/planeacion/publicaciones/115924/mapas_comunas_idesc/" frameborder="0" class="comunasFrame"></iframe>
         </div>
       </section>
       <section class="positionBlogCards">
         <h1 class="sectionsTitle">Servicios</h1>
+        <nav>
+          <a href="http://ec2-54-172-127-36.compute-1.amazonaws.com:8080/geoserver/red_prestacion_servicios_salud/wfs
+          ">WFS</a>
+          <a href="http://ec2-54-172-127-36.compute-1.amazonaws.com:8080/geoserver/red_prestacion_servicios_salud/wms">WMS</a>
+        </nav>
         <article>
           <section class="sectionServices">
             <article>
@@ -131,7 +136,6 @@
             <p>En esta sección, presentamos una tabla detallada con información sobre las Instituciones Prestadoras de Salud (IPS) registradas en los barrios San Fernando Nuevo y Urbanización Tequendama de la ciudad de Cali. Esta información le permitirá conocer las opciones disponibles en estas áreas y tomar decisiones informadas sobre su atención médica.</p>
             <div>
               <a onclick="showtable.mostrarIps()">Ver tabla</a>
-              <a id="d_ipstable">⇲ Descargar</a>
             </div>
           </div>
         </article>
@@ -142,7 +146,6 @@
             <p>Aquí presentamos una tabla con información sobre las Entidades Promotoras de Salud (EPS) en los barrios San Fernando Nuevo y Urbanización Tequendama de Cali. Consulte esta información para conocer las opciones disponibles en estas áreas.</p>
             <div>
               <a onclick="showtable.mostrarEps()">Ver tabla</a>
-              <a id="d_epstable">⇲ Descargar</a>
             </div>
           </div>
         </article>
@@ -153,7 +156,6 @@
             <p>En esta sección, encontrará información sobre los lugares de dispensación de medicamentos en la zona.</p>
             <div>
               <a onclick="showtable.mostrarDispensors()">Ver tabla</a>
-              <a id="d_dispensorstable">⇲ Descargar</a>
             </div>
           </div>
         </article>
@@ -163,7 +165,6 @@
             <h1>Servicios</h1>
             <div>
               <a onclick="showtable.mostrarServicios()">Ver tabla</a>
-              <a id="d_servicestables">⇲ Descargar</a>
             </div>
           </div>
         </article>

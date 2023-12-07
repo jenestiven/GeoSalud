@@ -18,7 +18,7 @@ app.use((err, req, res, next) => {
   res.status(500).render('error', { error: 'Ocurrió un error en el servidor' });
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
   console.log(`Servidor iniciado en el puerto ${port}`);
   console.log('La aplicación está lista para ser utilizada.');

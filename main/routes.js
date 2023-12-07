@@ -22,10 +22,10 @@ router.post('/login', (req, res) => {
 
 router.get('/home', async (req, res, next) => {
     try {
-      const dataIps = await tabla.getTabla('ips');
-      const dataEps = await tabla.getTabla('eps');
-      const dataDispensarios = await tabla.getTabla('dispensarios_de_medicamentos');
-      const dataServicios = await tabla.getTabla('servicios');
+      const dataIps = await tabla.getTabla('escenariodeportivo');
+      const dataEps = await tabla.getTabla('escenariodeportivo');
+      const dataDispensarios = await tabla.getTabla('escenariodeportivo');
+      const dataServicios = await tabla.getTabla('escenariodeportivo');
       res.render('index', { tablaIps: dataIps, tablaEps: dataEps, tablaDispensarios: dataDispensarios, tablaServicios: dataServicios });
     } catch (err) {
       console.error(err);
